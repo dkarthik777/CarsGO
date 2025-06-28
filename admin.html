@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head><title>CarsGO Admin</title><link rel="stylesheet" href="style.css" /></head>
+<body>
+<nav class="navbar">
+  <div class="logo">CarsGO Admin</div>
+  <div class="nav-links">
+    <a href="admin.html">Dashboard</a>
+    <a href="index.html" onclick="logout()">Logout</a>
+  </div>
+</nav>
+<div class="container">
+  <h2>Admin Panel - Add or Remove Cars</h2>
+  <input type="text" id="name" placeholder="Car Name" />
+  <input type="text" id="image" placeholder="Image Path" />
+  <input type="text" id="mileage" placeholder="Mileage" />
+  <input type="text" id="color" placeholder="Color" />
+  <input type="text" id="type" placeholder="Type" />
+  <input type="number" id="price" placeholder="Price per day" />
+  <button onclick="addCar()">Add Car</button>
+  <div id="carList" class="car-grid"></div>
+</div>
+<footer><p>&copy; 2025 CarsGO Admin Panel</p></footer>
+<script src="script.js"></script>
+</body>
+</html>

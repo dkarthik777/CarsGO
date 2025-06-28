@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>CarsGO - Home</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<nav class="navbar">
+  <div class="logo">CarsGO</div>
+  <div class="nav-links">
+    <a href="home.html">Home</a>
+    <a href="cars.html">Cars</a>
+    <a href="index.html" onclick="logout()">Logout</a>
+  </div>
+</nav>
+<div class="container">
+  <h2>Welcome to CarsGO - India's most reliable car rental platform</h2>
+  <p>Whether you're planning a weekend getaway, a business trip, or simply need a car for the day, we've got you covered with a wide range of well-maintained, high-performance vehicles to choose from.
+</p>
+</div>
+<footer><p>&copy; 2025 CarsGO. All rights reserved.</p></footer>
+<script>
+  function logout() {
+    localStorage.removeItem("user");
+  }
+</script>
+</body>
+</html>
